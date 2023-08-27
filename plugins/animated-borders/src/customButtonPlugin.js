@@ -1,20 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = plugin(function ({ addUtilities }) {
-  // const components = {
-  //   ':root': {
-  //     "@property --angle": {
-  //       "syntax": '<angle>',
-  //       "initial-value": "0deg",
-  //       "inherits": "false"
-  //     },
-  //     "@keyframes rotate": {
-  //       "to": {
-  //         "--angle": "360deg"
-  //       }
-  //     },
-  //   },
-  // }
   const utilities = {
     ".animated-border": {
       "@apply relative": {},
@@ -23,7 +9,7 @@ module.exports = plugin(function ({ addUtilities }) {
           "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
         "-webkit-mask-composite": "xor",
         "mask-composite": "exclude",
-        "@apply content-[''] absolute inset-0 rounded-[20px] border-[1.5px] border-transparent filter contrast-[6] bg-current pointer-events-none transition-all duration-1000":
+        "@apply content-[''] absolute inset-0 rounded-[10px] border-[3.5px] border-transparent filter contrast-[6] bg-current pointer-events-none transition-all duration-1000":
           {},
       },
       "&:after": {
@@ -34,6 +20,5 @@ module.exports = plugin(function ({ addUtilities }) {
       },
     },
   };
-  // addComponents(components);
   addUtilities(utilities);
 });

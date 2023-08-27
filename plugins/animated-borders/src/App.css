@@ -9,3 +9,10 @@
     --angle: 360deg;
   }
 }
+
+#root {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
