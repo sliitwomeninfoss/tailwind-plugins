@@ -1,4 +1,4 @@
-# @sliit-woman-foss/tailwind-plugin-animated-borders
+# @sliit-wif/tailwind-plugin-animated-borders
 
 > Add stylish animated borders to your buttons with this Tailwind CSS plugin!
 
@@ -11,13 +11,13 @@
 Using npm:
 
 ```sh
-npm install --save-dev @sliit-woman-foss/tailwind-plugin-animated-borders
+npm install --save-dev @sliit-wif/tailwind-plugin-animated-borders
 ```
 
 or using yarn:
 
 ```sh
-yarn add @sliit-woman-foss/tailwind-plugin-animated-borders --dev
+yarn add @sliit-wif/tailwind-plugin-animated-borders --dev
 ```
 
 <br/>
