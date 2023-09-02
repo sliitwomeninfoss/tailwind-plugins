@@ -1,5 +1,5 @@
 {
-  "name": "animated-borders",
+  "name": "@sliit-wif/tailwind-plugin-animated-borders",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
