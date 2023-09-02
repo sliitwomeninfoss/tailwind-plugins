@@ -28,7 +28,7 @@ yarn add @sliit-wif/tailwind-plugin-animated-borders --dev
 - Import the plugin's CSS into your project. You can do this by adding the following line to your main CSS file (e.g., styles.css):
 
 ```sh
-@import 'tailwind-plugin-animated-borders';
+import { CustomButton } from '@sliit-wif/tailwind-plugin-animated-borders';
 ```
 
 ---
