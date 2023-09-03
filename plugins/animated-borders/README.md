@@ -11,24 +11,35 @@
 Using npm:
 
 ```sh
-npm install --save-dev @sliit-wif/tailwind-plugin-animated-borders
+npm install --save @sliit-wif/tailwind-plugin-animated-borders
 ```
 
 or using yarn:
 
 ```sh
-yarn add @sliit-wif/tailwind-plugin-animated-borders --dev
+yarn add @sliit-wif/tailwind-plugin-animated-borders
 ```
 
 <br/>
 
 ## Usage
 
-- First, make sure you have Tailwind CSS set up in your project.
-- Import the plugin's CSS into your project. You can do this by adding the following line to your main CSS file (e.g., styles.css):
+- Make sure you have Tailwind CSS set up in your project.
 
 ```sh
+
 import { CustomButton } from '@sliit-wif/tailwind-plugin-animated-borders';
+
+....
+
+  <>
+
+    <CustomButton> Click Me! </CustomButton/>
+
+  </>
+
+...
+
 ```
 
 ---
@@ -51,12 +62,3 @@ import { CustomButton } from '@sliit-wif/tailwind-plugin-animated-borders';
 ```
 
 - Make sure to add this css code into your CSS file.
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

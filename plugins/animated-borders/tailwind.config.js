@@ -4,5 +4,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("./src/customButtonPlugin.js")],
+  plugins: [require("./src/CustomButton.js")],
 };
