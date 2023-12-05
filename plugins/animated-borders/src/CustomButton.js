@@ -1,6 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 
-module.exports = plugin(function ({ addUtilities }) {
+const CustomButton = plugin(function ({ addUtilities }) {
   const utilities = {
     ".animated-border": {
       "@apply relative": {},
@@ -22,3 +22,5 @@ module.exports = plugin(function ({ addUtilities }) {
   };
   addUtilities(utilities);
 });
+
+module.exports = CustomButton;
