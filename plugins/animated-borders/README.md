@@ -24,10 +24,10 @@ yarn add @sliit-wif/animated-borders
 
 ## Usage
 
-- 1. Make sure you have Tailwind CSS set up in your project.
-- 2. Update tailwind.config.js:
+1.  Make sure you have Tailwind CSS set up in your project.
+2.  Update tailwind.config.js:
 
-     - In your tailwind.config.js, make sure to use the correct plugin name:
+    - In your tailwind.config.js, make sure to use the correct plugin name:
 
 ---
 
@@ -39,8 +39,8 @@ yarn add @sliit-wif/animated-borders
 
 ---
 
-- 3.  Use the Styles in Your Components:
-      - After installing and configuring the plugin, you can use the styles.
+3.  Use the Styles in Your Components:
+    - After installing and configuring the plugin, you can use the styles.
 
 ---
 
@@ -59,7 +59,7 @@ yarn add @sliit-wif/animated-borders
 
 ---
 
-- 4. Make sure to add this css code into your CSS file.
+4. Make sure to add this css code into your CSS file.
 
 ---
 
