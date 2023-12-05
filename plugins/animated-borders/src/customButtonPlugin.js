@@ -9,7 +9,7 @@ const CustomButton = plugin(function ({ addUtilities }) {
           "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
         "-webkit-mask-composite": "xor",
         "mask-composite": "exclude",
-        "@apply content-[''] absolute inset-0 rounded-[10px] hover:border-[3.5px] hover:border-transparent filter contrast-[8] bg-current pointer-events-none transition-all duration-1000":
+        "@apply content-[''] absolute inset-0 rounded-[inherit] hover:border-[3.5px] hover:border-transparent filter contrast-[8] bg-current pointer-events-none transition-all duration-1000":
           {},
       },
       "&:after": {
