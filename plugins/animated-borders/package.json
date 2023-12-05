@@ -1,6 +1,6 @@
 {
   "name": "@sliit-wif/animated-borders",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
