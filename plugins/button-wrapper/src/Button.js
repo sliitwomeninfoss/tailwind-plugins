@@ -13,7 +13,7 @@ const Button = ({
   return (
     <button
       className={twMerge(
-        "group flex justify-center items-center text-[17px] md:text-[20px] cursor-pointer font-sf rounded-3xl px-4 py-[0.35rem] splash",
+        "btn-wrapper group flex justify-center items-center text-[17px] md:text-[20px] cursor-pointer font-sf rounded-3xl px-4 py-[0.35rem] splash",
         "bg-primary-light-translucent outline outline-transparent filter",
         "hover:bg-transparent hover:outline-double hover:outline-gray-extra-light hover:contrast-[2] transition-all duration-medium",
         className
@@ -30,10 +30,11 @@ const Button = ({
       {(arrow || arrowClassName) && (
         <div
           className={twMerge(
-            "text-primary-medium md:mt-0.5 pl-1.5 animated-chevron",
+            "text-primary-medium md:mt-0.5 pl-1.5 animated-chevron btn-chevron",
             arrowClassName
           )}
         >
+          <span className="btn-chevron-tail"></span>
           <FaChevronRight className="p-0.5" />
         </div>
       )}

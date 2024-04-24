@@ -4,25 +4,25 @@ const plugin = require("tailwindcss/plugin");
 const ButtonPlugin = plugin(function ({ addComponents, theme }) {
   const components = {
     ".btn-wrapper": {
-      "@apply flex items-center justify-center rounded-full cursor-pointer transition-all duration-300":
+      "@apply relative flex items-center justify-center rounded-full cursor-pointer overflow-hidden":
         {},
-      padding: `${theme("spacing.4")} ${theme("spacing.4")}`,
+      padding: `${theme("spacing.4")}`,
       backgroundColor: theme("colors.primary.light-translucent"),
       color: theme("colors.charcoal"),
-      fontSize: theme("fontSize.base"),
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      borderRadius: theme("borderRadius.lg"),
       fontWeight: theme("fontWeight.bold"),
-      cursor: "pointer",
-      transitionProperty:
-        "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-      transitionDuration: "150ms",
-      outline: "2px solid transparent",
-      "&:hover": {
-        backgroundColor: theme("colors.blue.700"),
-        outline: `2px solid ${theme("colors.gray.300")}`,
+      fontSize: theme("fontSize.base"),
+      "&:before": {
+        content: '""',
+        position: "absolute",
+        inset: 0,
+        borderRadius: "inherit",
+        backgroundColor: theme("colors.primary.light-translucent"),
+        transform: "scale(0)",
+        transition: "transform 0.5s ease-in-out",
+        zIndex: "-1",
+      },
+      "&:hover:before": {
+        transform: "scale(1.1)",
       },
     },
     ".btn-arrow": {
@@ -31,7 +31,7 @@ const ButtonPlugin = plugin(function ({ addComponents, theme }) {
     ".btn-text": {
       "@apply font-semibold transition-all duration-200": {},
       background:
-        "linear-gradient(45deg, var(--primary-dark), var(--primary-light))",
+        "linear-gradient(45deg, var(--primary-dark), var(--primary-medium))",
       backgroundClip: "text",
       textFillColor: "transparent",
       "-webkit-background-clip": "text",
@@ -65,7 +65,20 @@ const ButtonPlugin = plugin(function ({ addComponents, theme }) {
         transform: "translateX(0.5rem)",
         "&::before": {
           "@apply block transition-all duration-300 ease-in-out": {},
-          display: "block", // This ensures the tail appears with a transition.
+          display: "block",
+        },
+      },
+      ".btn-chevron-tail": {
+        "@apply absolute transition-opacity opacity-0": {},
+        width: "1rem",
+        height: "3px",
+        backgroundColor: "currentColor",
+        right: "100%",
+        top: "8px",
+        marginRight: "-18px",
+        transitionDuration: theme("transitionDuration.300"),
+        ".btn-wrapper:hover &": {
+          "@apply opacity-100": {},
         },
       },
     },
