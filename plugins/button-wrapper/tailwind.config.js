@@ -24,11 +24,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sf: ["San Francisco", "Arial", "sans-serif"], // Ensure 'San Francisco' is correctly defined
+        sf: ["San Francisco", "Arial", "sans-serif"],
       },
     },
   },
-  plugins: [
-    require("./src/buttonStyles"), // Adjust the path accordingly
-  ],
+  plugins: [require("./src/buttonStyles")],
 };

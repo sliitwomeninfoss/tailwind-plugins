@@ -34,8 +34,10 @@ const Button = ({
             arrowClassName
           )}
         >
-          <span className="btn-chevron-tail"></span>
-          <FaChevronRight className="p-0.5" />
+          <div className="arrow-container">
+            <span className="btn-chevron-tail"></span>
+            <FaChevronRight className="btn-arrow-icon p-0.5" />
+          </div>
         </div>
       )}
     </button>

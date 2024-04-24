@@ -25,9 +25,7 @@ const ButtonPlugin = plugin(function ({ addComponents, theme }) {
         transform: "scale(1.1)",
       },
     },
-    ".btn-arrow": {
-      paddingRight: theme("spacing.8"),
-    },
+
     ".btn-text": {
       "@apply font-semibold transition-all duration-200": {},
       background:
@@ -37,48 +35,27 @@ const ButtonPlugin = plugin(function ({ addComponents, theme }) {
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
-    ".btn-arrow-icon": {
-      marginLeft: theme("spacing.2"),
-      transition: "transform 250ms ease-in-out",
-      "&:hover": {
-        transform: "translateX(1rem)",
-      },
-    },
+
     ".animated-chevron": {
-      transition: "transform 0.6s ease-in-out",
-      "&:hover": {
-        transform: "translateX(10px)",
-      },
-      ".btn-chevron": {
-        "@apply transition-transform duration-300 ease-in-out": {},
-        transform: "translateX(0)",
-        "&::before": {
-          content: '""',
-          width: "1rem",
-          height: "1px",
-          backgroundColor: "currentColor",
-          display: "none",
-          marginRight: "0.25rem",
-        },
-      },
-      ".group:hover .btn-chevron": {
-        transform: "translateX(0.5rem)",
-        "&::before": {
-          "@apply block transition-all duration-300 ease-in-out": {},
-          display: "block",
-        },
-      },
-      ".btn-chevron-tail": {
-        "@apply absolute transition-opacity opacity-0": {},
-        width: "1rem",
-        height: "3px",
-        backgroundColor: "currentColor",
-        right: "100%",
-        top: "8px",
-        marginRight: "-18px",
-        transitionDuration: theme("transitionDuration.300"),
+      ".arrow-container": {
+        alignItems: "center",
+        transition: "transform 300ms ease-in-out",
         ".btn-wrapper:hover &": {
-          "@apply opacity-100": {},
+          transform: "translateX(1rem)",
+        },
+        "& .btn-chevron-tail": {
+          "@apply opacity-0 absolute": {},
+          width: "15px",
+          height: "3px",
+          backgroundColor: theme("colors.primary.medium"),
+          right: "100%",
+          top: "9px",
+          left: "calc(150% - 32px)",
+          marginRight: "-11px",
+          transition: "opacity 0.5s ease-in-out",
+          ".btn-wrapper:hover &": {
+            "@apply opacity-100": {},
+          },
         },
       },
     },
