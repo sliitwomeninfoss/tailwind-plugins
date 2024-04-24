@@ -53,7 +53,7 @@ yarn add @sliit-wif/button-wrapper
 
   <>
 
-  import ButtonWrapper from "./Button";
+  import ButtonWrapper from '@sliit-wif/button-wrapper/src/Button';
 
 
   <ButtonWrapper to="/next-page" className="w-auto" arrow arrowClassName="md:mt-[0.08rem]">
