@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-text {
+    background-image: linear-gradient(45deg, theme('colors.primary.dark'), theme('colors.primary.light'));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}
