@@ -1,13 +1,14 @@
 # @sliit-wif/button-wrapper
 
-> Enhance your Tailwind-powered projects with our Animated Button Tailwind Plugin. This plugin adds beautifully animated buttons to your web applications, featuring smooth transitions and a dynamic visual effect that enriches user interactions. Perfect for projects that require that extra flair in button animations.
+> Boost your React projects with our @sliit-wif/button-wrapper—where style meets function. Designed with Tailwind CSS, this button component not only captivates with dynamic animations and hover effects but also doubles as a navigator, seamlessly guiding users with its integrated linking feature. It’s the perfect upgrade for a more interactive and polished user experience.
 
 <br/>
 
 ## Features
 
-- **Smooth Hover Effects**: Enjoy a subtle scaling background color transition that ensures your buttons stand out.
-- **Arrow Animation**: Arrows that move on hover, giving a clear indication of interaction.
+- **Smooth Hover Effects**: Enjoy a subtle scaling background color transition that ensures your buttons not only stand out but also captivate.
+- **Arrow Animation**: Dynamic arrows glide on hover, signaling direction and prompting user interaction.
+- **Integrated Navigation** : Each button doubles as a navigation tool, offering seamless in-app routing with built-in linking capabilities. Perfect for guiding users through your application’s journey.
 
 <br/>
 
