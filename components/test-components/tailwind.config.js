@@ -6,7 +6,7 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [require("@sliit-wif/animated-borders/src/customButtonPlugin.js")],
+  plugins: [require("@sliit-wif/button-wrapper/src/buttonStyles")],
 };
 
 export default config;
