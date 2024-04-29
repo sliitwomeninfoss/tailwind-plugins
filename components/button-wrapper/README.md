@@ -39,7 +39,7 @@ yarn add @sliit-wif/button-wrapper
 
 ```sh
 
-    plugins: [require("@sliit-wif/button-wrapper/src/buttonStyles")],
+    plugins: [require("@sliit-wif/button-wrapper/dist/buttonStyles")],
 
 ```
 
@@ -54,7 +54,7 @@ yarn add @sliit-wif/button-wrapper
 
   <>
 
-  import ButtonWrapper from '@sliit-wif/button-wrapper/src/Button';
+  import { ButtonWrapper } from '@sliit-wif/button-wrapper';
 
 
   <ButtonWrapper to="/next-page" className="w-auto" arrow arrowClassName="md:mt-[0.08rem]">

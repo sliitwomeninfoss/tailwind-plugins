@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ButtonWrapper from "./Button";
+import { ButtonWrapper } from "./Button";
 
 function App() {
   return (

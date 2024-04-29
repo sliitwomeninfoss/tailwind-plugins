@@ -55,4 +55,4 @@ const ButtonWrapper = ({ to, target = "_self", ...props }) => {
   return <Button {...props} />;
 };
 
-export default ButtonWrapper;
+export { ButtonWrapper };
