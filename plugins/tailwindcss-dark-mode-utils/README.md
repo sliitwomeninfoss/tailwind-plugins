@@ -53,7 +53,7 @@ A Tailwind CSS plugin that provides custom utilities for dark mode enhancements.
      },
      darkMode: "class", // Enable dark mode with 'class'
      plugins: [
-       require("@sliit-wif/tailwindcss-dark-mode-utils"), // Include the custom plugin
+       require("@sliit-wif/tailwindcss-dark-mode-utils/src/Mode.js"), // Include the custom plugin
      ],
    };
 

@@ -1,8 +1,7 @@
 {
   "name": "@sliit-wif/tailwindcss-dark-mode-utils",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "private": false,
-  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
